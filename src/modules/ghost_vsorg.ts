@@ -323,7 +323,16 @@ export default class GhostModule extends Module {
                 country = 'PHL';
                 regionId = 30;
             }
-
+            else if(ghostExpeditionRegion!.opponentCountry === 'THA')
+            {
+                country = 'THA';
+                regionId = 40;
+            }
+            else if(ghostExpeditionRegion!.opponentCountry === 'SGP')
+            {
+                country = 'SGP';
+                regionId = 34;
+            }
             // Get Canditate list
             let car = await prisma.car.findMany({
                 where:{
