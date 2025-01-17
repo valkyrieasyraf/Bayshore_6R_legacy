@@ -1,4 +1,4 @@
-mport fs from 'fs';
+import fs from 'fs';
 import process from 'process';
 
 export interface ConfigFile {
